@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>Уча.live</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<link rel="stylesheet" type="text/css" href="./General Styles.css" />
+		<link rel="stylesheet" type="text/css" href="./Fullpage Styles.css" />
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="./Fullpage.js"></script>
+
+		<script type="text/javascript">
+
+			$(document).ready(function() {
+
+				$('#fullpage').fullpage({
+					sectionsColor: ['#ff5f45', '#0798ec', '#fc6c7c', '#fec401', '#fc6c7c'],
+					navigation: true,
+					slidesNavigation: true
+				});
+
+				$('#moveSectionUp').click(function(e) {
+					e.preventDefault();
+					$.fn.fullpage.moveSectionUp();
+				});
+
+				$('#moveSectionDown').click(function(e) {
+					e.preventDefault();
+					$.fn.fullpage.moveSectionDown();
+				});
+			});
+
+		</script>
+
+		<style type="text/css">
+
+			#actions {
+				position:fixed;
+				top: 73px;
+				left: 30px;
+				z-index: 99999;
+			}
+
+			#actions a {
+				background: rgba(0,0,0,0.8);
+				padding: 7px;
+				margin: 2px;
+				color: #ccc;
+				display: inline-block;
+			}
+
+			#actions a:hover {
+				color: #fff;
+				background: #81A140;
+			}
+
+			#Section-0 {
+				background: linear-gradient(#4BBFC3,#7BAABE);
+			}
+
+			#Section-1 {
+				background: linear-gradient(#7BAABE,#969AC6);
+			}
+
+			#Section-2 {
+				background: linear-gradient(#969AC6,#76c2bd);
+			}
+
+			#Section-3 {
+				background: linear-gradient(#76c2bd,#4BBFC3);
+			}
+
+			#Section-4 {
+				background: linear-gradient(#4BBFC3,#969AC6);
+			}
+
+			#Section-5 {
+				background: linear-gradient(#969AC6,#76c2bd);
+			}
+
+			#Section-6 {
+				background: linear-gradient(#76c2bd,#4BBFC3);
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<div id="fullpage">
+
+			<div id="Section-0" class="section">
+				<div class="intro">
+					<h1>Учи на живо</h1>
+					<br>
+					<p style="font-size: 32px;">Платформа за виртуално просъствие в класната стая</p>
+				</div>
+			</div>
+
+			<div id="Section-1" class="section">
+				<div class="slide">
+					<h1>Предимства на онлайн обучението</h1>
+				</div>
+
+				<div class="slide">
+					<h1>Удобно е</h1>
+					<br>
+					<p style="font-size: 32px;">Средата на обучение е значително по-удобна, Вие избирате от къде да се включите.</p>
+				</div>
+
+				<div class="slide">
+					<h1>Запис на уроците</h1>
+					<br>
+					<p style="font-size: 32px;"><span style="font-weight: bold;" >24 - часов достъп</span> до обучителните материали.</p>
+				</div>
+			</div>
+
+			<div id="Section-2" class="section">
+				<div class="slide">
+					<h1>Предимства на системите за дистанционно обучение</h1>
+				</div>
+
+				<div class="slide">
+					<h1 style="font-size: 42px;">Еднократно създаване на обучение,</h1><br>
+					<h1 style="font-size: 42px;">което може да бъде редактирано по всяко време.</h1>
+				</div>
+
+				<div class="slide">
+					<h1 style="font-size: 42px;">Водене на статистика на присъстващите</h1><br>
+					<h1 style="font-size: 42px;">и неприсъстващите ученици.</h1>
+				</div>
+
+				<div class="slide">
+					<h1 style="font-size: 42px;">Улесняване на социалното взаймодействие между ученици и учители,</h1><br>
+					<h1 style="font-size: 42px;">посредством чат система.</h1>
+				</div>
+
+				<div class="slide">
+					<h1 style="font-size: 42px;">Сигурност - достъпът до системите</h1><br>
+					<h1 style="font-size: 42px;">за дистанционно обучение е контролиран.</h1>
+				</div>
+			</div>
+
+			<div id="Section-3" class="section">
+				<div class="slide">
+					<h1>Функционалности на приложението - Уча.live</h1>
+				</div>
+
+				<div class="slide">
+					<h1>Контролиран достъп</h1>
+					<br>
+					<p style="font-size: 32px;">Влизането в класната стая е с потребителско име и парола на ученика</p><br>
+					<p style="font-size: 32px;">за предпазване от нежелан достъп.</p>
+				</div>
+
+				<div class="slide">
+					<h1>Дневен график</h1>
+					<br>
+					<p style="font-size: 32px;">Визуализация на програмата за деня на съответния клас.</p>
+				</div>
+
+				<div class="slide">
+					<h1>Отброяване на време</h1>
+					<br>
+					<p style="font-size: 32px;">Функционалност за информиране на учениците за начало и край на междучасието,</p><br>
+					<p style="font-size: 32px;">както и за края на учебния ден.</p>
+				</div>
+			</div>
+
+			<div id="Section-4" class="section">
+				<div class="slide">
+					<h1>Какви възможности има</h1><br>
+					<h1>учителят ?</h1>
+				</div>
+
+				<div class="slide">
+					<h1 style="font-size: 42px;">Улеснен панел за създаване на профили на ученици,</h1><br>
+					<h1 style="font-size: 42px;">разпределянето им по класове и създаване</h1><br>
+					<h1 style="font-size: 42px;">на графици за достъп до камерите.</h1>
+				</div>
+
+				<div class="slide">
+					<h1 style="font-size: 42px;">Възможност за добавяне на ученици избрали</h1><br>
+					<h1 style="font-size: 42px;">самостоятелна форма на обучение</h1><br>
+					<h1 style="font-size: 42px;">във всеки един момент.</h1>
+				</div>
+			</div>
+
+			<div id="Section-5" class="section">
+				<div class="slide">
+					<h1>Какви функционалности ще се добавят ?</h1>
+				</div>
+
+				<div class="slide">
+					<h1 style="font-size: 42px;">1. Възможност за следене на присъствията на</h1><br>
+					<h1 style="font-size: 42px;">учениците и история на</h1><br>
+					<h1 style="font-size: 42px;">закъсненията им.</h1>
+				</div>
+
+				<div class="slide">
+					<h1 style="font-size: 42px;">2. Възможност за достъп до запис</h1><br>
+					<h1 style="font-size: 42px;">от уроците при боледуване</h1><br>
+					<h1 style="font-size: 42px;">на ученика.</h1>
+				</div>
+
+				<div class="slide">
+					<h1 style="font-size: 42px;">3. Възможност за задаване на изпити</h1><br>
+					<h1 style="font-size: 42px;">на ученика в текстови, избирателен или</h1><br>
+					<h1 style="font-size: 42px;">наблюдаване с камера и предаване на</h1><br>
+					<h1 style="font-size: 42px;">снимки с телефон.</h1>
+				</div>
+
+				<div class="slide">
+					<h1 style="font-size: 42px;">4. Възможност за задаване на домашни</h1><br>
+					<h1 style="font-size: 42px;">на ученика в текстови, избирателен или</h1><br>
+					<h1 style="font-size: 42px;">наблюдаване с камера и предаване на</h1><br>
+					<h1 style="font-size: 42px;">снимки с телефон.</h1>
+				</div>
+			</div>
+
+			<div id="Section-6" class="section">
+				<h1 style="font-size: 38px;">Линк към приложението</h1>
+				<br>
+				<a href="http://app.ucha.live/login" target="_blank" style="color: black; text-decoration: none; font-size: 42px;">Уча.live</a>
+			</div>
+
+		</div>
+
+	</body>
+
+</html>
