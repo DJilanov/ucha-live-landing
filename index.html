@@ -21,7 +21,8 @@
 				$('#fullpage').fullpage({
 					sectionsColor: ['#ff5f45', '#0798ec', '#fc6c7c', '#fec401', '#fc6c7c'],
 					navigation: true,
-					slidesNavigation: true
+					slidesNavigation: true,
+					controlArrows: true,
 				});
 
 				$('#moveSectionUp').click(function(e) {
@@ -32,6 +33,22 @@
 				$('#moveSectionDown').click(function(e) {
 					e.preventDefault();
 					$.fn.fullpage.moveSectionDown();
+				});
+
+				setInterval(() => {
+					if ($('#Section-2').children().children().get(0).paused) {
+						$('#Section-2').children().children().get(1).style.display = 'block';
+					} else {
+						$('#Section-2').children().children().get(1).style.display = 'none';
+					}
+				}, 1000)
+
+				$('.playpause').click(function() {
+					if ($(this).parent().children().get(0).paused) {
+						$(this).parent().children().get(0).play();
+					} else {
+						$(this).parent().children().get(0).pause();
+					}
 				});
 			});
 
@@ -98,7 +115,7 @@
 
 		<div id="fullpage">
 
-			<div id="Section-0" class="section">
+			<div id="Section-1" class="section">
 				<div class="intro">
 					<h1>Учи на живо</h1>
 					<br>
@@ -106,7 +123,16 @@
 				</div>
 			</div>
 
-			<div id="Section-1" class="section">
+			<div id="Section-2" class="section">
+				<video id="myVideo" autoplay="" loop="" controls="true" poster="./poster.jpg">
+					<source src="./background.mp4" type="video/mp4">
+					<source src="./background.ogv" type="video/ogg"/>
+					Your browser does not support HTML5 video.
+				</video>
+				<div class="playpause"></div>
+			</div>
+
+			<div id="Section-3" class="section">
 				<div class="slide">
 					<h1>Предимства на онлайн обучението</h1>
 				</div>
@@ -124,7 +150,7 @@
 				</div>
 			</div>
 
-			<div id="Section-2" class="section">
+			<div id="Section-4" class="section">
 				<div class="slide">
 					<h1>Предимства на предлаганата система за обучение от разстояние</h1>
 				</div>
@@ -144,7 +170,7 @@
 				</div>
 			</div>
 
-			<div id="Section-3" class="section">
+			<div id="Section-5" class="section">
 				<div class="slide">
 					<h1>Функционалности на приложението</h1><br>
 					<h1>Уча.live</h1>
@@ -170,7 +196,7 @@
 				</div>
 			</div>
 
-			<div id="Section-4" class="section">
+			<div id="Section-6" class="section">
 				<div class="slide">
 					<h1>Какви възможности има</h1><br>
 					<h1>администратора ?</h1>
@@ -183,7 +209,7 @@
 				</div>
 			</div>
 
-			<div id="Section-5" class="section">
+			<div id="Section-7" class="section">
 				<div class="slide">
 					<h1>Какви функционалности ще се добавят ?</h1>
 				</div>
@@ -205,7 +231,7 @@
 				</div>
 			</div>
 
-			<div id="Section-6" class="section">
+			<div id="Section-8" class="section">
 				<h1 style="font-size: 38px;">Линк към приложението</h1>
 				<br>
 				<a href="http://app.ucha.live/login" target="_blank" style="color: black; text-decoration: none; font-size: 42px;">Уча.live</a>
