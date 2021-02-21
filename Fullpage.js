@@ -1504,8 +1504,8 @@
         /**
          * Detecting mousewheel scrolling
          *
-         * http://blogs.sitepointstatic.com/examples/tech/mouse-wheel/index.html
-         * http://www.sitepoint.com/html5-javascript-mouse-wheel/
+         * https://blogs.sitepointstatic.com/examples/tech/mouse-wheel/index.html
+         * https://www.sitepoint.com/html5-javascript-mouse-wheel/
          */
         var prevTime = new Date().getTime();
 
@@ -2661,7 +2661,7 @@
             clearTimeout(resizeId);
 
             //in order to call the functions only when the resize is finished
-            //http://stackoverflow.com/questions/4298612/jquery-how-to-call-resize-event-only-once-its-finished-resizing    
+            //https://stackoverflow.com/questions/4298612/jquery-how-to-call-resize-event-only-once-its-finished-resizing    
             resizeId = setTimeout(function(){
 
                 //issue #3336 
@@ -3038,7 +3038,7 @@
         /**
         * Checks for translate3d support
         * @return boolean
-        * http://stackoverflow.com/questions/5661671/detecting-transform-translate3d-support
+        * https://stackoverflow.com/questions/5661671/detecting-transform-translate3d-support
         */
         function support3d() {
             var el = document.createElement('p'),
@@ -3169,7 +3169,7 @@
 
         /*
         * Returns and object with Microsoft pointers (for IE<11 and for IE >= 11)
-        * http://msdn.microsoft.com/en-us/library/ie/dn304886(v=vs.85).aspx
+        * https://msdn.microsoft.com/en-us/library/ie/dn304886(v=vs.85).aspx
         */
         function getMSPointer(){
             var pointer;
@@ -3488,7 +3488,7 @@
             //anchors can not have the same value as any element ID or NAME
             options.anchors.forEach(function(name){
 
-                //case insensitive selectors (http://stackoverflow.com/a/19465187/1081396)
+                //case insensitive selectors (https://stackoverflow.com/a/19465187/1081396)
                 var nameAttr = [].slice.call($('[name]')).filter(function(item) {
                     return item.getAttribute('name') && item.getAttribute('name').toLowerCase() == name.toLowerCase();
                 });
@@ -3531,7 +3531,7 @@
 
         /**
         * Simulates the animated scrollTop of jQuery. Used when css3:false or scrollBar:true or autoScrolling:false
-        * http://stackoverflow.com/a/16136789/1081396
+        * https://stackoverflow.com/a/16136789/1081396
         */
         function scrollTo(element, to, duration, callback) {
             var start = getScrolledPosition(element);
@@ -3949,7 +3949,7 @@
     }
 
     /**
-    * http://stackoverflow.com/questions/22100853/dom-pure-javascript-solution-to-jquery-closest-implementation
+    * https://stackoverflow.com/questions/22100853/dom-pure-javascript-solution-to-jquery-closest-implementation
     * Returns the element or `false` if there's none
     */
     function closest(el, selector) {
@@ -3999,7 +3999,7 @@
         }
     }
 
-    //http://stackoverflow.com/questions/3464876/javascript-get-window-x-y-position-for-scroll
+    //https://stackoverflow.com/questions/3464876/javascript-get-window-x-y-position-for-scroll
     function getScrollTop(){
         var doc = document.documentElement;
         return (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
